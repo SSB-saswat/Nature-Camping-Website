@@ -54,9 +54,9 @@ store.on("error", function (err) {
 });
 
 const sessionConfig = {
-  store,
+  store: store,
   name: "session",
-  secret: "thisshouldbeabettersecret",
+  secret: secret,
   resave: false,
   saveUnintialized: true,
   cookie: {
